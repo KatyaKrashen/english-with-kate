@@ -10,7 +10,11 @@
 </head>
 <body>
     <header>
-        <h1>English with Kate</h1>
+        <!-- Add logo next to the website name -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>English with Kate</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -30,3 +34,17 @@
     </footer>
 </body>
 </html>
+
+/* styles.css */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
