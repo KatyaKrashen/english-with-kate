@@ -3,16 +3,16 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #fff0f0;
     color: #333;
 }
 
 header {
-    background-color: #222;
+    background-color: #e63946;
     color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #e63946;
+    border-bottom: 4px solid #b22222;
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e63946;
+    color: #b22222;
 }
 
 section {
@@ -44,6 +44,7 @@ section {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #e63946;
 }
 
 h2 {
@@ -53,6 +54,6 @@ h2 {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #222;
+    background-color: #e63946;
     color: white;
 }
