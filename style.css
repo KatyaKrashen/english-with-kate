@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica', sans-serif; /* default simple font for body */
     background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
@@ -41,7 +41,7 @@ header .logo:hover {
 }
 
 header h1 {
-    font-family: 'Book Antiqua', serif;
+    font-family: 'Book Antiqua', serif; /* Elegant font for title */
     font-size: 2.5em;
     color: white;
     margin: 0;
@@ -56,7 +56,7 @@ header h1 {
 .header-right a {
     text-decoration: none;
     font-size: 1.8em;
-    font-family: 'Book Antiqua', serif;
+    font-family: 'Book Antiqua', serif; /* Elegant font for navigation */
     font-weight: normal;
     color: white;
     position: relative;
@@ -83,7 +83,7 @@ section {
 }
 
 h2 {
-    font-family: 'Book Antiqua', serif;
+    font-family: 'Book Antiqua', serif; /* Elegant font for subheadings */
     font-size: 2em;
     color: #B71C1C;
     margin-bottom: 15px;
@@ -91,7 +91,7 @@ h2 {
 
 /* Paragraph Styling (Simpler font for smaller text) */
 p {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica', sans-serif; /* Simple font for paragraphs */
     font-size: 1.1em;
     color: #555;
     line-height: 1.8;
@@ -105,7 +105,7 @@ button {
     color: #fff;
     border: none;
     border-radius: 30px;
-    font-family: 'Book Antiqua', serif;
+    font-family: 'Book Antiqua', serif; /* Elegant font for buttons */
     font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
