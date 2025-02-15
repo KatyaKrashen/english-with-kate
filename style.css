@@ -41,7 +41,7 @@ header .logo:hover {
 }
 
 header h1 {
-    font-family: 'Libre Baskerville', serif; /* Elegant Libre Baskerville font for the main title */
+    font-family: 'Libre Baskerville', serif; /* Libre Baskerville for the main title */
     font-size: 2.5em;
     color: white;
     margin: 0;
@@ -83,7 +83,7 @@ section {
 }
 
 h2 {
-    font-family: 'Libre Baskerville', serif; /* Libre Baskerville font for section titles */
+    font-family: 'Libre Baskerville', serif; /* Libre Baskerville for section titles */
     font-size: 2em;
     color: #B71C1C;
     margin-bottom: 15px;
@@ -91,7 +91,7 @@ h2 {
 
 /* Paragraph Styling (Using Helvetica for smaller text) */
 p {
-    font-family: 'Helvetica', sans-serif; /* Simple Helvetica font for paragraphs */
+    font-family: 'Helvetica', sans-serif; /* Helvetica for regular text */
     font-size: 1.1em;
     color: #555;
     line-height: 1.8;
@@ -175,3 +175,4 @@ footer {
         padding: 10px 25px;
     }
 }
+
