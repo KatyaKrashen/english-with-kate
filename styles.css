@@ -1,5 +1,5 @@
 .logo-img {
-  max-width: 80px;  /* You can adjust this value to make the logo smaller */
+  max-width: 80px;  /* Adjust this value to make the logo smaller */
   height: auto;      /* Maintain aspect ratio */
 }
 
@@ -9,27 +9,4 @@
   height: auto; /* Maintain aspect ratio */
   display: block; /* Removes unwanted space below the image */
   margin-top: 20px; /* Adds space between the header and the image */
-}
-
-/* Header navigation styling */
-.header-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.header-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.header-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
 }
