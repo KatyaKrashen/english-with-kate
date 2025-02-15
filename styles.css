@@ -1,12 +1,119 @@
-.logo-img {
-  max-width: 80px;  /* Adjust this value to make the logo smaller */
-  height: auto;      /* Maintain aspect ratio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Styling for the image below the header */
-.building-img {
-  width: 100%;  /* Set image to fill the full width of the screen */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Removes unwanted space below the image */
-  margin-top: 20px; /* Adds space between the header and the image */
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #007bff;
+  padding: 20px 0;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  max-width: 60px; /* Resize the logo */
+  height: auto;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.header-nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.header-nav ul li {
+  margin-right: 20px;
+}
+
+.header-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6c757d;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hero Image Styling */
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
 }
