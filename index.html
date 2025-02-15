@@ -23,7 +23,7 @@
     }
     .content {
       display: flex;
-      justify-content: space-around;
+      flex-wrap: wrap;
       gap: 20px;
     }
     .box {
@@ -40,6 +40,30 @@
       font-size: 1em;
       line-height: 1.6;
     }
+    .box ul {
+      list-style-type: square;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+    }
+    .cta {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      margin: 20px auto;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .cta:hover {
+      background-color: #45a049;
+    }
   </style>
 </head>
 <body>
@@ -53,12 +77,28 @@
     <div class="content">
       <div class="box">
         <h2>Goal of This Website</h2>
-        <p>At English with Kate, we make learning English ☀️ fun, 💡 easy, and 🚀 effective! Whether you’re just starting out 🌱 or sharpening your skills 🎯, we’ve got you covered.</p>
+        <p>At English with Kate, we make learning English ☀️ fun, 💡 easy, and 🚀 effective! Whether you’re just starting out 🌱 or sharpening your skills 🎯, we’ve got you covered with:</p>
+        <ul>
+          <li>✨ Simple Tips 📝💡</li>
+          <li>🧠 Interactive Quizzes ✅❓</li>
+          <li>📚 Useful Resources 📂💖</li>
+        </ul>
       </div>
+
       <div class="box">
         <h2>Recent Posts</h2>
-        <p>Stay tuned for the latest tips, challenges, and resources! 🎉</p>
+        <h3>How to Master English Pronunciation</h3>
+        <p>Mastering pronunciation is one of the most important steps in learning English! In this post, we explore effective techniques and exercises to help you pronounce English words like a native speaker. 🗣️</p>
+        
+        <h3>Common Grammar Mistakes to Avoid</h3>
+        <p>In this post, we dive into some of the most common grammar mistakes learners make and how you can avoid them. From subject-verb agreement to tenses, we’ve got you covered! 📚</p>
+
+        <h3>Boost Your Vocabulary in 30 Days!</h3>
+        <p>Want to expand your vocabulary fast? We’ve created a 30-day challenge with daily vocabulary exercises. Ready to make learning words fun? 💬</p>
+
+        <a href="#" class="cta">Read More Posts</a>
       </div>
+
       <div class="box">
         <h2>Topics</h2>
         <ul>
@@ -66,12 +106,44 @@
           <li>🧠 Interactive Quizzes ✅❓</li>
           <li>📚 Useful Resources 📂💖</li>
         </ul>
+
+        <h3>Featured Topic: Learning English Through Movies 🎬</h3>
+        <p>Movies are an amazing way to practice listening skills and learn new vocabulary. Check out our top 10 movie recommendations that will improve your English while keeping you entertained!</p>
       </div>
+    </div>
+
+    <div class="box">
+      <h2>Interactive Quizzes</h2>
+      <p>Test your knowledge with our fun quizzes! They cover various aspects of English grammar, vocabulary, and even speaking. Here are some of our latest quizzes:</p>
+      
+      <ul>
+        <li><strong>Grammar Challenge:</strong> Test your knowledge of English tenses.</li>
+        <li><strong>Vocabulary Quiz:</strong> How many new words can you learn in 10 minutes?</li>
+        <li><strong>Fun Pronunciation Test:</strong> See how well you pronounce common English words!</li>
+      </ul>
+      
+      <a href="#" class="cta">Take a Quiz</a>
+    </div>
+
+    <div class="box">
+      <h2>Resources</h2>
+      <h3>Free PDF Worksheets</h3>
+      <p>We’ve compiled free worksheets that you can download and print to practice your English skills. From grammar exercises to vocabulary lists, there’s something for every learner.</p>
+
+      <h3>Helpful YouTube Channels</h3>
+      <p>Check out these amazing YouTube channels for extra English practice:</p>
+      <ul>
+        <li>EngVid - Free English lessons on various topics.</li>
+        <li>BBC Learning English - Learn English with authentic materials.</li>
+        <li>Rachel’s English - Master American English pronunciation.</li>
+      </ul>
+
+      <a href="#" class="cta">Explore Resources</a>
     </div>
   </section>
 
   <footer>
-    <p style="text-align:center; padding: 10px; background-color:#4CAF50; color:white;">Created by Kate - English with Kate | Join the community!</p>
+    <p>Created by Kate - English with Kate | Join the community!</p>
   </footer>
 
 </body>
