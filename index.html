@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English with Kate</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English with Kate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      padding: 20px;
+    }
+    .content {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .box {
+      width: 30%;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .box h2 {
+      font-size: 1.2em;
+    }
+    .box p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Logo" class="logo">
-            <h1 class="site-title">English with Kate</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="common-mistakes.html">Common Mistakes</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <div class="hero">
-            <h2>Welcome to English with Kate</h2>
-            <p>Explore useful tips, lessons, and quizzes designed to improve your English skills at your own pace.</p>
-            <button onclick="window.location.href='about.html'">Discover More</button>
-        </div>
+  <header>
+    <h1>🌟 Welcome to English with Kate! 💬📚</h1>
+    <p>Where English learning is fun, easy, and effective!</p>
+  </header>
 
-        <div class="about">
-            <h3>About Me</h3>
-            <p>Hi, I'm Kate! I love sharing tips, lessons, and quizzes to help you on your English learning journey. Join me as we learn together!</p>
-        </div>
+  <section>
+    <div class="content">
+      <div class="box">
+        <h2>Goal of This Website</h2>
+        <p>At English with Kate, we make learning English ☀️ fun, 💡 easy, and 🚀 effective! Whether you’re just starting out 🌱 or sharpening your skills 🎯, we’ve got you covered.</p>
+      </div>
+      <div class="box">
+        <h2>Recent Posts</h2>
+        <p>Stay tuned for the latest tips, challenges, and resources! 🎉</p>
+      </div>
+      <div class="box">
+        <h2>Topics</h2>
+        <ul>
+          <li>✨ Simple Tips 📝💡</li>
+          <li>🧠 Interactive Quizzes ✅❓</li>
+          <li>📚 Useful Resources 📂💖</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <div class="recent-posts">
-            <h3>Recent Posts</h3>
-            <ul>
-                <li><a href="#">5 Common Grammar Mistakes and How to Fix Them</a></li>
-                <li><a href="#">Quick Tips for Improving Your Vocabulary</a></li>
-                <li><a href="#">Fun English Quizzes to Test Your Skills</a></li>
-            </ul>
-        </div>
+  <footer>
+    <p style="text-align:center; padding: 10px; background-color:#4CAF50; color:white;">Created by Kate - English with Kate | Join the community!</p>
+  </footer>
 
-        <div class="quote">
-            <blockquote>
-                "The limits of my language mean the limits of my world." – Ludwig Wittgenstein
-            </blockquote>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 English with Kate | Connect with me on <a href="#">Instagram</a> and <a href="#">YouTube</a></p>
-    </footer>
 </body>
 </html>
