@@ -134,7 +134,7 @@ footer {
 }
 
 .bottom-image {
-    max-width: 80%; /* Adjust this value to make the image smaller */
+    width: 50%; /* Adjust to make the image smaller */
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
