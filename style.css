@@ -45,31 +45,24 @@ header span {
   color: white; /* White text for title emphasis */
 }
 
-/* Navigation Bar */
-.header-right ul {
-  list-style: none;
+/* Header Right Navigation */
+.header-right {
   display: flex;
   gap: 30px;
-}
-
-.header-right li {
-  display: inline-block;
 }
 
 .header-right a {
   text-decoration: none;
   font-size: 1.2em;
-  font-weight: bold;
+  font-weight: normal;
   color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 8px 16px;
   transition: all 0.3s ease;
 }
 
 .header-right a:hover {
-  background-color: #ffd700; /* Gold color on hover */
-  color: #B71C1C; /* Change text color to red on hover */
-  transform: translateY(-5px); /* Slight movement on hover */
+  color: #B71C1C; /* Red color on hover */
+  transform: translateY(-2px); /* Slight movement on hover */
 }
 
 /* Main Content Section */
@@ -141,12 +134,9 @@ footer {
 
   .header-right {
     margin-top: 20px;
-  }
-
-  .header-right ul {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
   }
 
   main {
