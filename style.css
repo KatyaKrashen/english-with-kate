@@ -42,13 +42,9 @@ header .logo:hover {
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8em; /* Set title size to 1.8em to match the nav */
+  font-size: 1.8em; /* Same font size as the navigation links */
   color: white; /* White text for title */
   margin: 0;
-}
-
-header span {
-  color: white; /* White text for title emphasis */
 }
 
 /* Header Right Navigation */
@@ -59,7 +55,7 @@ header span {
 
 .header-right a {
   text-decoration: none;
-  font-size: 1.8em; /* Set navigation links to the same size as the title */
+  font-size: 1.8em; /* Same font size as the title */
   font-family: 'Playfair Display', serif; /* Elegant font */
   font-weight: normal;
   color: white;
