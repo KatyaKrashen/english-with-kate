@@ -1,4 +1,4 @@
-/* Global Reset */
+ /* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +70,7 @@ header span {
 .header-right a:hover {
   transform: scale(1.1); /* Make text bigger when hovered */
   color: white; /* Keep the text color white on hover */
+  text-decoration: none; /* Ensure no underline or decoration */
 }
 
 /* Main Content Section */
