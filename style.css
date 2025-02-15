@@ -5,15 +5,15 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body Styling (using Helvetica for normal small text) */
 body {
-    font-family: 'Helvetica', sans-serif; /* default simple font for body */
+    font-family: 'Helvetica', sans-serif; /* Default simple font for body */
     background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header Section */
+/* Header Section (Main title and navigation use serif font) */
 header {
     display: flex;
     justify-content: space-between;
@@ -41,13 +41,13 @@ header .logo:hover {
 }
 
 header h1 {
-    font-family: 'Book Antiqua', serif; /* Elegant font for title */
+    font-family: 'Georgia', serif; /* Serif font for title */
     font-size: 2.5em;
     color: white;
     margin: 0;
 }
 
-/* Header Right Navigation */
+/* Header Right Navigation (Using serif font for navigation links) */
 .header-right {
     display: flex;
     gap: 30px;
@@ -56,7 +56,7 @@ header h1 {
 .header-right a {
     text-decoration: none;
     font-size: 1.8em;
-    font-family: 'Book Antiqua', serif; /* Elegant font for navigation links */
+    font-family: 'Georgia', serif; /* Serif font for navigation */
     font-weight: normal;
     color: white;
     position: relative;
@@ -70,7 +70,7 @@ header h1 {
     text-decoration: none;
 }
 
-/* Main Content Section */
+/* Main Content Section (Using Helvetica for normal text) */
 main {
     padding: 40px 20px;
     max-width: 1000px;
@@ -83,13 +83,13 @@ section {
 }
 
 h2 {
-    font-family: 'Book Antiqua', serif; /* Elegant font for subheadings */
+    font-family: 'Georgia', serif; /* Serif font for section titles */
     font-size: 2em;
     color: #B71C1C;
     margin-bottom: 15px;
 }
 
-/* Paragraph Styling (Simpler font for smaller text) */
+/* Paragraph Styling (Using Helvetica for smaller text) */
 p {
     font-family: 'Helvetica', sans-serif; /* Simple font for paragraphs */
     font-size: 1.1em;
@@ -98,14 +98,14 @@ p {
     margin-bottom: 20px;
 }
 
-/* Join Us Button */
+/* Button Styling */
 button {
     padding: 12px 30px;
     background-color: #B71C1C;
     color: #fff;
     border: none;
     border-radius: 30px;
-    font-family: 'Book Antiqua', serif; /* Elegant font for buttons */
+    font-family: 'Georgia', serif; /* Serif font for buttons */
     font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
