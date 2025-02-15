@@ -1,177 +1,54 @@
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English with Kate</title>
 
-/* Body Styling (using Helvetica for normal small text) */
-body {
-    font-family: 'Helvetica', sans-serif; /* Default simple font for body */
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
-}
+    <!-- Importing Google Fonts (Libre Baskerville and Helvetica) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;500&display=swap" rel="stylesheet">
 
-/* Header Section (Main title and navigation use Libre Baskerville font) */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #B71C1C;
-    padding: 20px 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+    <!-- Linking the CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.header-left {
-    display: flex;
-    align-items: center;
-}
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>English with Kate</h1>
+        </div>
+        <div class="header-right">
+            <a href="#">Vocabulary</a>
+            <a href="#">Grammar</a>
+            <a href="#">Quizzes</a>
+            <a href="#">About</a>
+        </div>
+    </header>
 
-header .logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-    transition: all 0.3s ease;
-}
+    <div class="image-container">
+        <img src="image.png" alt="Learning Image" class="bottom-image">
+    </div>
 
-header .logo:hover {
-    transform: scale(1.2);
-}
+    <main>
+        <section>
+            <h2>Welcome to English with Kate!</h2>
+            <p>At English with Kate, we make learning English ☀️ fun, 💡 easy, and 🚀 effective! Whether you’re just starting out 🌱 or sharpening your skills 🎯, we’ve got you covered with:</p>
+            <ul>
+                <li>✨ Simple Tips 📝💡: Quick and practical advice to boost your grammar, vocabulary, and communication skills.</li>
+                <li>🧠 Interactive Quizzes ✅❓: Fun challenges to test your knowledge and track your progress.</li>
+                <li>📚 Useful Resources 📂💖: Handy guides, worksheets, and exercises to help you practice and grow.</li>
+            </ul>
+            <p>🎉 Join our community and make English learning part of your daily life — one tip, one quiz, and one conversation at a time. 💪💬</p>
+            <button>Join Us</button>
+        </section>
+    </main>
 
-header h1 {
-    font-family: 'Libre Baskerville', serif; /* Elegant Libre Baskerville font for the main title */
-    font-size: 2.5em;
-    color: white;
-    margin: 0;
-}
+    <footer>
+        <p>© 2025 English with Kate | All rights reserved</p>
+    </footer>
 
-/* Header Right Navigation (Using Libre Baskerville for navigation links) */
-.header-right {
-    display: flex;
-    gap: 30px;
-}
-
-.header-right a {
-    text-decoration: none;
-    font-size: 1.8em;
-    font-family: 'Libre Baskerville', serif; /* Libre Baskerville font for navigation */
-    font-weight: normal;
-    color: white;
-    position: relative;
-    padding: 8px 16px;
-    transition: transform 0.3s ease;
-}
-
-.header-right a:hover {
-    transform: scale(1.1);
-    color: white !important;
-    text-decoration: none;
-}
-
-/* Main Content Section (Using Helvetica for normal text) */
-main {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Section Styling */
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-family: 'Libre Baskerville', serif; /* Libre Baskerville font for section titles */
-    font-size: 2em;
-    color: #B71C1C;
-    margin-bottom: 15px;
-}
-
-/* Paragraph Styling (Using Helvetica for smaller text) */
-p {
-    font-family: 'Helvetica', sans-serif; /* Simple Helvetica font for paragraphs */
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-/* Button Styling */
-button {
-    padding: 12px 30px;
-    background-color: #B71C1C;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-family: 'Libre Baskerville', serif; /* Libre Baskerville font for buttons */
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background-color: #9B1B1B;
-    transform: scale(1.05);
-}
-
-/* Footer Styling */
-footer {
-    background-color: #ffffff;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    font-size: 1em;
-    margin-top: 40px;
-    border-top: 1px solid #ddd;
-}
-
-/* Image Styling */
-.image-container {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.bottom-image {
-    width: 55%; /* Adjust to make the image smaller */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header h1 {
-        font-size: 2.2em;
-    }
-
-    .header-right {
-        margin-top: 20px;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    main {
-        padding: 30px 20px;
-    }
-
-    h2 {
-        font-size: 1.8em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    button {
-        font-size: 1em;
-        padding: 10px 25px;
-    }
-}
+</body>
+</html>
