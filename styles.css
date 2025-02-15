@@ -1,119 +1,27 @@
-body {
-    font-family: 'Georgia', serif; /* Elegant serif font */
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8; /* Light neutral background */
-    color: #333;
-    line-height: 1.6;
+.logo-img {
+  max-width: 100px;  /* Adjust this value as needed to make the logo smaller */
+  height: auto;      /* Keep aspect ratio */
 }
 
-h1.site-title {
-    font-size: 48px; /* Large size for the site title */
-    font-weight: bold;
-    text-align: center;
-    color: #d32f2f; /* Red color for the site title */
-    margin-top: 50px;
-    letter-spacing: 2px;
-    text-transform: uppercase; /* All caps for the site title */
+/* Header navigation styling (you can adjust as needed) */
+.header-nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-header {
-    background-color: transparent; /* Transparent background for header */
-    color: #d32f2f; /* Red color for header text */
-    padding: 20px 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
+.header-nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    margin-top: 15px;
+.header-nav ul li a {
+  text-decoration: none;
+  color: #333;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 20px;
-    transition: transform 0.3s ease;
-}
-
-nav ul li:hover {
-    transform: scale(1.1); /* Hover effect for engagement */
-}
-
-nav ul li a {
-    color: #d32f2f; /* Red for links */
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #b71c1c; /* Darker red on hover */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-section {
-    padding: 50px 30px;
-    margin: 30px auto;
-    max-width: 900px;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
-    border-left: 5px solid #d32f2f; /* Red accent on the left border */
-    margin-top: 20px; /* Space between sections */
-    margin-bottom: 40px; /* Space before footer */
-}
-
-section h2 {
-    color: #d32f2f; /* Red for section headings */
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-section p {
-    font-size: 18px;
-    color: #555;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #d32f2f; /* Red footer */
-    color: white;
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-/* Logo container */
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.logo {
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    padding: 3px;
-    background-color: transparent;
-    transition: transform 0.3s ease;
-}
-
-.logo:hover {
-    transform: scale(1.1); /* Zoom effect for logo on hover */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
