@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Book Antiqua', serif; /* Set font to Book Antiqua */
   background-color: #f7f7f7; /* Light grey background */
   color: #333; /* Dark gray text for readability */
   line-height: 1.6;
@@ -41,8 +41,8 @@ header .logo:hover {
 }
 
 header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8em; /* Same font size as the navigation links */
+  font-family: 'Book Antiqua', serif; /* Elegant font for title */
+  font-size: 1.8em; /* Set title size to match the navigation */
   color: white; /* White text for title */
   margin: 0;
 }
@@ -56,7 +56,7 @@ header h1 {
 .header-right a {
   text-decoration: none;
   font-size: 1.8em; /* Same font size as the title */
-  font-family: 'Playfair Display', serif; /* Elegant font */
+  font-family: 'Book Antiqua', serif; /* Elegant font for navigation */
   font-weight: normal;
   color: white;
   position: relative;
@@ -83,7 +83,7 @@ section {
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Book Antiqua', serif; /* Elegant font for section headers */
   font-size: 2em;
   color: #B71C1C; /* Deep red for headings */
   margin-bottom: 15px;
@@ -104,7 +104,7 @@ button {
   color: #fff;
   border: none;
   border-radius: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Book Antiqua', serif; /* Elegant font for button */
   font-size: 1.1em;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
