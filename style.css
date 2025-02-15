@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header Section (Main title and navigation use serif font) */
+/* Header Section (Main title and navigation use Baskerville font) */
 header {
     display: flex;
     justify-content: space-between;
@@ -41,13 +41,13 @@ header .logo:hover {
 }
 
 header h1 {
-    font-family: 'Georgia', serif; /* Serif font for title */
+    font-family: 'Baskerville', serif; /* Elegant Baskerville font for the main title */
     font-size: 2.5em;
     color: white;
     margin: 0;
 }
 
-/* Header Right Navigation (Using serif font for navigation links) */
+/* Header Right Navigation (Using Baskerville for navigation links) */
 .header-right {
     display: flex;
     gap: 30px;
@@ -56,7 +56,7 @@ header h1 {
 .header-right a {
     text-decoration: none;
     font-size: 1.8em;
-    font-family: 'Georgia', serif; /* Serif font for navigation */
+    font-family: 'Baskerville', serif; /* Baskerville font for navigation */
     font-weight: normal;
     color: white;
     position: relative;
@@ -83,7 +83,7 @@ section {
 }
 
 h2 {
-    font-family: 'Georgia', serif; /* Serif font for section titles */
+    font-family: 'Baskerville', serif; /* Baskerville font for section titles */
     font-size: 2em;
     color: #B71C1C;
     margin-bottom: 15px;
@@ -91,7 +91,7 @@ h2 {
 
 /* Paragraph Styling (Using Helvetica for smaller text) */
 p {
-    font-family: 'Helvetica', sans-serif; /* Simple font for paragraphs */
+    font-family: 'Helvetica', sans-serif; /* Simple Helvetica font for paragraphs */
     font-size: 1.1em;
     color: #555;
     line-height: 1.8;
@@ -105,7 +105,7 @@ button {
     color: #fff;
     border: none;
     border-radius: 30px;
-    font-family: 'Georgia', serif; /* Serif font for buttons */
+    font-family: 'Baskerville', serif; /* Baskerville font for buttons */
     font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
