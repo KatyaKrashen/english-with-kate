@@ -58,7 +58,6 @@ footer {
     color: white;
 }
 
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -69,6 +68,6 @@ footer {
 .logo {
     height: 40px;
     width: 40px;
-    object-fit: cover;
-    border-radius: 50%;
+    object-fit: contain; /* Show the full image without cropping */
+    border-radius: 0; /* Remove rounded corners */
 }
