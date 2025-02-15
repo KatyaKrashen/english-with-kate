@@ -1,164 +1,165 @@
 /* Global Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Body Styling */
 body {
-  font-family: 'Helvetica', sans-serif; /* Simple font for normal text */
-  background-color: #f7f7f7; /* Light grey background */
-  color: #333; /* Dark gray text for readability */
-  line-height: 1.6;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header Section */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #B71C1C; /* Red background for header */
-  padding: 20px 40px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B71C1C;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-left {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 header .logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
-  transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.3s ease;
 }
 
 header .logo:hover {
-  transform: scale(1.2); /* Logo grows when hovered */
+    transform: scale(1.2);
 }
 
 header h1 {
-  font-family: 'Book Antiqua', serif; /* Elegant font for title */
-  font-size: 2.5em; /* Larger font size for title */
-  color: white; /* White text for title */
-  margin: 0;
+    font-family: 'Book Antiqua', serif;
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
 }
 
 /* Header Right Navigation */
 .header-right {
-  display: flex;
-  gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 
 .header-right a {
-  text-decoration: none;
-  font-size: 1.8em; /* Smaller font size for navigation */
-  font-family: 'Book Antiqua', serif; /* Elegant font for navigation */
-  font-weight: normal;
-  color: white;
-  position: relative;
-  padding: 8px 16px;
-  transition: transform 0.3s ease;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: 'Book Antiqua', serif;
+    font-weight: normal;
+    color: white;
+    position: relative;
+    padding: 8px 16px;
+    transition: transform 0.3s ease;
 }
 
 .header-right a:hover {
-  transform: scale(1.1); /* Make text bigger when hovered */
-  color: white !important; /* Ensure the text color stays white */
-  text-decoration: none; /* Ensure no underline or decoration */
+    transform: scale(1.1);
+    color: white !important;
+    text-decoration: none;
 }
 
 /* Main Content Section */
 main {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* Section Styling */
 section {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 h2 {
-  font-family: 'Book Antiqua', serif; /* Elegant font for section headers */
-  font-size: 2em; /* Larger font size for section headers */
-  color: #B71C1C; /* Deep red for headings */
-  margin-bottom: 15px;
+    font-family: 'Book Antiqua', serif;
+    font-size: 2em;
+    color: #B71C1C;
+    margin-bottom: 15px;
 }
 
 /* Paragraph Styling (Simpler font for smaller text) */
 p {
-  font-family: 'Helvetica', sans-serif; /* Simpler font for body text */
-  font-size: 1.1em;
-  color: #555; /* Soft dark gray text for descriptions */
-  line-height: 1.8;
-  margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 /* Join Us Button */
 button {
-  padding: 12px 30px;
-  background-color: #B71C1C; /* Deep red button */
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  font-family: 'Book Antiqua', serif; /* Elegant font for button */
-  font-size: 1.1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 12px 30px;
+    background-color: #B71C1C;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Book Antiqua', serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #9B1B1B; /* Slightly darker red on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+    background-color: #9B1B1B;
+    transform: scale(1.05);
 }
 
 /* Footer Styling */
 footer {
-  background-color: #ffffff; /* White background */
-  color: #333;
-  text-align: center;
-  padding: 20px;
-  font-size: 1em;
-  margin-top: 40px;
-  border-top: 1px solid #ddd; /* Subtle border for separation */
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  header h1 {
-    font-size: 2.2em;
-  }
+    header h1 {
+        font-size: 2.2em;
+    }
 
-  .header-right {
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+    .header-right {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-  main {
-    padding: 30px 20px;
-  }
+    main {
+        padding: 30px 20px;
+    }
 
-  h2 {
-    font-size: 1.8em;
-  }
+    h2 {
+        font-size: 1.8em;
+    }
 
-  p {
-    font-size: 1em;
-  }
+    p {
+        font-size: 1em;
+    }
 
-  button {
-    font-size: 1em;
-    padding: 10px 25px;
-  }
+    button {
+        font-size: 1em;
+        padding: 10px 25px;
+    }
 }
+
