@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  font-family: 'Book Antiqua', serif; /* Set font to Book Antiqua */
+  font-family: 'Arial', sans-serif; /* Simpler font for normal text */
   background-color: #f7f7f7; /* Light grey background */
   color: #333; /* Dark gray text for readability */
   line-height: 1.6;
@@ -42,7 +42,7 @@ header .logo:hover {
 
 header h1 {
   font-family: 'Book Antiqua', serif; /* Elegant font for title */
-  font-size: 1.8em; /* Set title size to match the navigation */
+  font-size: 2em; /* Larger font size for title */
   color: white; /* White text for title */
   margin: 0;
 }
@@ -55,7 +55,7 @@ header h1 {
 
 .header-right a {
   text-decoration: none;
-  font-size: 1.8em; /* Same font size as the title */
+  font-size: 2em; /* Same font size as the title */
   font-family: 'Book Antiqua', serif; /* Elegant font for navigation */
   font-weight: normal;
   color: white;
@@ -84,13 +84,14 @@ section {
 
 h2 {
   font-family: 'Book Antiqua', serif; /* Elegant font for section headers */
-  font-size: 2em;
+  font-size: 1.8em; /* Larger font size for section headers */
   color: #B71C1C; /* Deep red for headings */
   margin-bottom: 15px;
 }
 
-/* Paragraph Styling */
+/* Paragraph Styling (Simpler font for smaller text) */
 p {
+  font-family: 'Arial', sans-serif; /* Simpler font for body text */
   font-size: 1.1em;
   color: #555; /* Soft dark gray text for descriptions */
   line-height: 1.8;
