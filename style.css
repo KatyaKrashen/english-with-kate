@@ -37,7 +37,7 @@ header h1 {
 }
 
 header span {
-  color: #d32f2f; /* Red accent for emphasis */
+  color: #B71C1C; /* Elegant, deep red accent */
 }
 
 /* Main Content Section */
@@ -55,7 +55,7 @@ section {
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2em;
-  color: #d32f2f; /* Red accent color for headings */
+  color: #B71C1C; /* Deep red for headings */
   margin-bottom: 15px;
 }
 
@@ -70,7 +70,7 @@ p {
 /* Join Us Button */
 button {
   padding: 12px 30px;
-  background-color: #d32f2f; /* Red button */
+  background-color: #B71C1C; /* Deep red button */
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -81,7 +81,7 @@ button {
 }
 
 button:hover {
-  background-color: #c2185b; /* Darker red on hover */
+  background-color: #9B1B1B; /* Slightly darker red on hover */
   transform: scale(1.05); /* Slight zoom effect */
 }
 
