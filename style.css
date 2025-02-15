@@ -56,7 +56,7 @@ header h1 {
 .header-right a {
     text-decoration: none;
     font-size: 1.8em;
-    font-family: 'Book Antiqua', serif; /* Elegant font for navigation */
+    font-family: 'Book Antiqua', serif; /* Elegant font for navigation links */
     font-weight: normal;
     color: white;
     position: relative;
@@ -162,4 +162,3 @@ footer {
         padding: 10px 25px;
     }
 }
-
