@@ -1,57 +1,60 @@
 body {
-    font-family: 'Georgia', serif; /* Changed to serif font for elegance */
+    font-family: 'Georgia', serif; /* Elegant serif font */
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7; /* Lighter background for a fresh modern look */
+    background-color: #f8f8f8; /* Light neutral background */
     color: #333;
     line-height: 1.6;
 }
 
-header {
-    background-color: #3a3a3a; /* Darker background for a sleek, modern feel */
-    color: white;
-    padding: 25px 0;
+h1.site-title {
+    font-size: 48px; /* Large size for the site title */
+    font-weight: bold;
     text-align: center;
-    border-bottom: 4px solid #f4a261; /* Softer accent color */
-    font-family: 'Merriweather', serif; /* Elegant serif font */
+    color: #d32f2f; /* Red color for the site title */
+    margin-top: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* All caps for the site title */
 }
 
-header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px; /* Add spacing for modern flair */
+header {
+    background-color: transparent; /* Transparent background for header */
+    color: #d32f2f; /* Red color for header text */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 15px;
     text-align: center;
+    margin-top: 15px;
 }
 
 nav ul li {
     display: inline-block;
     margin: 0 20px;
-    transition: transform 0.3s ease; /* Slight animation for engagement */
+    transition: transform 0.3s ease;
 }
 
 nav ul li:hover {
-    transform: scale(1.1); /* Scale effect on hover for engagement */
+    transform: scale(1.1); /* Hover effect for engagement */
 }
 
 nav ul li a {
-    color: white;
+    color: #d32f2f; /* Red for links */
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 1px;
-    text-transform: uppercase; /* Adds modern uppercase look */
+    text-transform: uppercase;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f4a261; /* Softer accent color on hover */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for hover effect */
+    color: #b71c1c; /* Darker red on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 section {
@@ -60,12 +63,14 @@ section {
     max-width: 900px;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05); /* Softer shadow for elegance */
-    border-left: 5px solid #3a3a3a; /* Adds visual depth */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #d32f2f; /* Red accent on the left border */
+    margin-top: 20px; /* Space between sections */
+    margin-bottom: 40px; /* Space before footer */
 }
 
 section h2 {
-    color: #3a3a3a; /* Dark text for headings */
+    color: #d32f2f; /* Red for section headings */
     font-size: 28px;
     margin-bottom: 15px;
 }
@@ -78,10 +83,11 @@ section p {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #3a3a3a;
+    background-color: #d32f2f; /* Red footer */
     color: white;
     font-family: 'Merriweather', serif;
     font-size: 16px;
+    margin-top: 20px;
 }
 
 footer p {
@@ -109,5 +115,5 @@ footer p {
 }
 
 .logo:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1); /* Zoom effect for logo on hover */
 }
