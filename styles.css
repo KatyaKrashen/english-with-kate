@@ -1,9 +1,17 @@
 .logo-img {
-  max-width: 100px;  /* Adjust this value as needed to make the logo smaller */
-  height: auto;      /* Keep aspect ratio */
+  max-width: 80px;  /* You can adjust this value to make the logo smaller */
+  height: auto;      /* Maintain aspect ratio */
 }
 
-/* Header navigation styling (you can adjust as needed) */
+/* Styling for the image below the header */
+.building-img {
+  width: 100%;  /* Set image to fill the full width of the screen */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes unwanted space below the image */
+  margin-top: 20px; /* Adds space between the header and the image */
+}
+
+/* Header navigation styling */
 .header-nav ul {
   list-style-type: none;
   padding: 0;
