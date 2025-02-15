@@ -58,6 +58,7 @@ footer {
     color: white;
 }
 
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -69,5 +70,7 @@ footer {
     height: 40px;
     width: 40px;
     object-fit: contain; /* Show the full image without cropping */
-    border-radius: 0; /* Remove rounded corners */
+    border-radius: 0; /* Ensure rectangular shape */
+    padding: 2px;
+    background-color: transparent;
 }
