@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +18,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff; /* White background for header */
+  background-color: #B71C1C; /* Red background for header */
   padding: 20px 40px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -33,11 +34,11 @@ header .logo {
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5em;
-  color: #333; /* Dark gray for the title */
+  color: white; /* White text for title */
 }
 
 header span {
-  color: #B71C1C; /* Elegant, deep red accent */
+  color: white; /* White text for title emphasis */
 }
 
 /* Main Content Section */
