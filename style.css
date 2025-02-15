@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,6 @@ header {
   align-items: center;
   background-color: #B71C1C; /* Red background for header */
   padding: 20px 40px;
-  text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -49,7 +49,11 @@ header span {
 .header-right ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+}
+
+.header-right li {
+  display: inline-block;
 }
 
 .header-right a {
@@ -57,11 +61,15 @@ header span {
   font-size: 1.2em;
   font-weight: bold;
   color: white;
-  transition: color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }
 
 .header-right a:hover {
-  color: #ffd700; /* Gold color on hover */
+  background-color: #ffd700; /* Gold color on hover */
+  color: #B71C1C; /* Change text color to red on hover */
+  transform: translateY(-5px); /* Slight movement on hover */
 }
 
 /* Main Content Section */
