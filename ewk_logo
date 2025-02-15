@@ -1,3 +1,1 @@
-<div class="logo-container">
-    <img src="logo.png" alt="Website Logo" class="logo">
-</div>
+<img src="logo.png" alt="Website Logo" class="logo">
