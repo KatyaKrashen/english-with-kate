@@ -69,8 +69,8 @@ footer {
 .logo {
     height: 40px;
     width: 40px;
-    object-fit: contain; /* Show the full image without cropping */
-    border-radius: 0; /* Ensure rectangular shape */
+    object-fit: cover; /* Fit the image within the circle */
+    border-radius: 50%; /* Make the logo round */
     padding: 2px;
     background-color: transparent;
 }
