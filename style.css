@@ -27,6 +27,11 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+  max-width: 150px; /* Set a max width for the logo */
+  height: 150px; /* Maintain the aspect ratio */
+}
+
 header h1 {
   font-size: 2.5em;
   font-weight: bold;
@@ -176,7 +181,3 @@ footer {
 }
 
 
-.logo {
-  max-width: 150px; /* Set a max width for the logo */
-  height: auto; /* Maintain the aspect ratio */
-}
