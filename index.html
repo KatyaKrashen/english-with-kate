@@ -5,51 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>English with Kate</title>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Libre Baskerville', serif;
-      background-color: #f7f7f7;
-      color: #333;
-      padding: 20px;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #B71C1C;
-      color: white;
-      padding: 15px;
-    }
-    .logo { width: 40px; height: 40px; border-radius: 50%; transition: 0.3s; }
-    .logo:hover { transform: scale(1.1); }
-    .menu-icon { font-size: 2.5em; cursor: pointer; }
-    .dropdown-content { display: none; position: absolute; background: white; border-radius: 5px; }
-    .dropdown:hover .dropdown-content { display: block; }
-    .dropdown-content a { padding: 8px; display: block; color: #B71C1C; text-decoration: none; }
-    .dropdown-content a:hover { background-color: #f1f1f1; }
-    .image-container img { width: 50%; margin: 10px auto; display: block; }
-    .citation { font-style: italic; text-align: center; font-size: 13px; }
-    .section-item {
-      display: inline-block;
-      background: white;
-      padding: 15px;
-      margin: 10px;
-      border-radius: 10px;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-    .section-item:hover { background-color: #f1e4e4; transform: scale(1.05); }
-    button {
-      padding: 10px 20px;
-      background: #B71C1C;
-      color: white;
-      border-radius: 20px;
-      border: none;
-      transition: 0.3s;
-    }
-    button:hover { background-color: #9B1B1B; transform: scale(1.1); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -67,20 +23,20 @@
       </div>
     </div>
   </header>
-
+  
   <main>
     <div class="image-container">
       <img src="image.png" alt="Learning Image">
       <p class="citation">“To learn a language is to have one more window from which to look at the world.” – Chinese proverb</p>
     </div>
-    <section class="section-item" id="vocabulary">📚 Vocabulary</section>
-    <section class="section-item" id="grammar">🧠 Grammar</section>
-    <section class="section-item" id="quizzes">✅ Quizzes</section>
-    <section class="section-item" id="about">🌟 About</section>
-    <div class="join-section">
-      <h2>🎉 Join our community</h2>
-      <button>Join Us</button>
-    </div>
+    <section class="section-item" id="vocabulary">📚 Vocabulary<br>Explore essential words for all levels.</section>
+    <section class="section-item" id="grammar">🧠 Grammar<br>Master grammar with tips and examples.</section>
+    <section class="section-item" id="quizzes">✅ Quizzes<br>Test your skills with fun quizzes.</section>
+    <section class="section-item" id="about">🌟 About<br>Learn about us and our passion for teaching.</section>
   </main>
+  
+  <footer>
+    <p>© 2025 English with Kate | All rights reserved</p>
+  </footer>
 </body>
 </html>
