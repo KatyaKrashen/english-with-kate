@@ -86,3 +86,10 @@ footer {
   margin-top: 60px; /* Increased top margin for more space from sections */
   color: #555;
 }
+
+.logo {
+  width: 100px; /* Set width of the logo */
+  height: 100px; /* Set height of the logo (same as width for a square shape) */
+  border-radius: 50%; /* This will make the logo round */
+  object-fit: cover; /* Ensures the image covers the circle without stretching */
+}
