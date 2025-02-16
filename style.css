@@ -28,8 +28,8 @@ header {
 }
 
 .logo {
-  max-width: 150px; /* Set a max width for the logo */
-  height: 150px; /* Maintain the aspect ratio */
+  max-width: 120px;  /* Reduce the maximum width further */
+  height: auto;      /* Maintain aspect ratio */
 }
 
 header h1 {
