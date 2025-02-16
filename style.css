@@ -41,16 +41,15 @@ h1 {
 .menu-icon {
   font-size: 2.5em;
   cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
+  background: none;
+  border: none;
+  color: white;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* This ensures it drops directly below the menu icon */
+  top: 100%;
   left: 0;
   background-color: white;
   border-radius: 5px;
@@ -59,10 +58,6 @@ h1 {
   width: 200px;
   z-index: 1000;
   margin-top: 10px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .dropdown-content a {
