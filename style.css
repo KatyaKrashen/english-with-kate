@@ -23,7 +23,6 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 .header-container {
@@ -71,6 +70,30 @@ nav ul li a {
 nav ul li a:hover {
   color: #FFC107; 
   transform: translateY(-3px); 
+}
+
+/* Image and Quote Section */
+.image-quote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px; /* Increased margin-bottom */
+}
+
+.half-width {
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.citation {
+  font-style: italic;
+  font-size: 1.5em;
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 20px; /* Added top margin for more space */
+  width: 50%; /* Control the width of the quote section */
 }
 
 /* Vocabulary Page Styling */
