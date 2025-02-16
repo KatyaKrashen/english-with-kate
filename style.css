@@ -6,96 +6,95 @@
 }
 
 body {
-  font-family: 'Libre Baskerville', serif; /* Elegant font */
-  background-color: #f7f7f7;
-  color: #333; /* Slightly darker text for readability */
-  line-height: 1.6;
-  padding: 20px;
-  font-size: 1.1em;
-}
-
-h1, h2, h3, h4 {
   font-family: 'Libre Baskerville', serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.1em;
+  padding: 20px;
 }
 
 header {
+  background-color: #B71C1C;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #B71C1C;
-  padding: 15px 30px; /* Reduce padding to control header size */
-  color: white;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  max-width: 120px;
-  max-height: 80px; /* Limit the height if the logo is too tall */
+header .logo {
+  max-width: 100px; /* Make the logo smaller */
   height: auto;
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-header .menu-icon {
+.menu-icon {
   font-size: 2.5em;
   color: white;
-  cursor: pointer;
   background: none;
   border: none;
-  padding: 10px;
-  display: none; /* Hidden by default */
+  cursor: pointer;
+  display: none; /* Hidden on desktop */
 }
 
-/* Mobile Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #B71C1C;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #D32F2F;
+}
+
+/* For smaller screens, show menu icon */
 @media (max-width: 768px) {
-  header .menu-icon {
-    display: block; /* Display the menu icon on mobile */
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #B71C1C;
-    border-radius: 5px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-  }
-
-  .dropdown-content a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #D32F2F;
+  .menu-icon {
+    display: block; /* Display the hamburger menu icon */
   }
 
   .dropdown.open .dropdown-content {
-    display: block;
+    display: block; /* Show the dropdown when clicked */
   }
 }
 
-/* Desktop Menu */
+/* Desktop Navigation */
 @media (min-width: 769px) {
   .dropdown-content {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
   }
 
   .dropdown-content a {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
+    padding: 15px;
+    text-align: center;
   }
 
   .dropdown-content a:hover {
@@ -103,7 +102,7 @@ header .menu-icon {
   }
 }
 
-/* Adjustments for image and quote */
+/* Image and Quote Section */
 .image-quote {
   display: flex;
   align-items: center;
@@ -121,7 +120,7 @@ header .menu-icon {
   font-style: italic;
   font-size: 1.5em;
   padding-left: 20px;
-  color: #555; /* Lighter gray for the quote */
+  color: #555;
   line-height: 1.5;
 }
 
@@ -131,10 +130,9 @@ header .menu-icon {
   justify-content: space-between;
   gap: 20px;
   padding: 40px 0;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
-/* Individual section items */
 .section-item {
   flex: 1;
   min-width: 220px;
@@ -144,24 +142,23 @@ header .menu-icon {
   padding: 25px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   font-size: 1.2em;
-  color: #333;
 }
 
 .section-item strong {
   font-weight: bold;
   font-size: 1.3em;
-  color: #B71C1C; /* Bold red color for section titles */
+  color: #B71C1C;
   display: block;
   margin-bottom: 15px;
 }
 
 .section-item:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  background-color: #f0f0f0; /* Light background color on hover */
+  background-color: #f0f0f0;
 }
 
 /* Footer Styling */
@@ -174,12 +171,3 @@ footer {
   margin-top: 40px;
   color: #555;
 }
-
-/* Hover effect for links in dropdown */
-.dropdown-content a:hover {
-  background-color: #B71C1C;
-  color: white;
-  transform: scale(1.05); /* Add a little scale effect to menu items */
-}
-
-
