@@ -1,15 +1,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Libre Baskerville', serif; background-color: #f7f7f7; color: #333; padding: 20px; }
+body { font-family: 'Libre Baskerville', serif; background-color: #f7f7f7; padding: 20px; }
 header { display: flex; justify-content: space-between; align-items: center; background-color: #B71C1C; padding: 15px; color: white; }
 .header-left { display: flex; align-items: center; gap: 10px; }
 .menu-icon { font-size: 2.5em; cursor: pointer; }
-.dropdown-content { display: none; position: absolute; background-color: white; width: 200px; border-radius: 5px; overflow: visible; }
+.dropdown-content { display: none; position: absolute; background-color: white; border-radius: 5px; padding: 10px; }
 .dropdown:hover .dropdown-content { display: block; }
-.dropdown-content a { display: block; padding: 10px; color: #B71C1C; }
-.image-quote { display: flex; justify-content: space-between; align-items: center; padding: 20px; }
-.image-quote img { width: 48%; border-radius: 8px; }
-.citation { font-style: italic; font-size: 2em; }
-.sections-grid { display: flex; justify-content: space-around; padding: 20px; gap: 10px; }
-.section-item { width: 22%; aspect-ratio: 1/1; background: white; padding: 15px; border-radius: 10px; transition: 0.3s; text-align: center; cursor: pointer; }
+.dropdown-content a { display: block; padding: 10px; color: #B71C1C; white-space: nowrap; }
+.image-quote { display: flex; align-items: center; }
+.half-width { width: 50%; border-radius: 8px; }
+.citation { font-style: italic; font-size: 2.5em; padding-left: 20px; }
+.sections-grid { display: flex; justify-content: space-between; gap: 10px; padding: 20px; }
+.section-item { width: 22%; aspect-ratio: 1/1; background: white; border-radius: 10px; padding: 15px; transition: 0.3s; text-align: center; cursor: pointer; }
 .section-item:hover, .logo:hover, .menu-icon:hover { transform: scale(1.1); }
-footer { padding: 15px; text-align: center; background-color: #eee; font-size: 1em; margin-top: 20px; }
+footer { padding: 15px; text-align: center; background-color: #eee; font-size: 1em; }
