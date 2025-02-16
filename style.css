@@ -19,6 +19,7 @@ header {
   color: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Added for positioning the dropdown relative to the header */
 }
 
 .header-left {
@@ -47,17 +48,19 @@ h1 {
 }
 
 .dropdown-content {
-  display: none;
+  display: none; /* Initially hidden */
   position: absolute;
-  top: 100%;
+  top: 100%; /* Position the dropdown directly below the hamburger button */
   left: 0;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  width: 200px;
+  width: 100%; /* Full width of its parent container */
   z-index: 1000;
   margin-top: 10px;
+  max-height: 300px; /* Limit the height of the dropdown */
+  overflow-y: auto; /* Add a scrollbar if the dropdown content is too long */
 }
 
 .dropdown-content a {
@@ -71,6 +74,11 @@ h1 {
 
 .dropdown-content a:hover {
   background-color: #f7f7f7;
+}
+
+/* This is the new CSS for the .show class */
+.show {
+  display: block; /* Makes the dropdown visible */
 }
 
 .image-quote {
@@ -148,10 +156,4 @@ footer {
   .dropdown-content {
     width: 90%;
   }
-}
-
-
-/* This will make the dropdown menu visible when the class "show" is applied */
-.show {
-  display: block;
 }
