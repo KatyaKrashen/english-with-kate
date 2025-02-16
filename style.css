@@ -19,17 +19,19 @@ h1, h2, h3, h4 {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #B71C1C;
+  padding: 15px 30px; /* Reduce padding to control header size */
   color: white;
-  padding: 20px;
-  text-align: center;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  max-width: 120px;  /* Reduce the maximum width further */
-  height: auto;      /* Maintain aspect ratio */
+  max-width: 120px;
+  max-height: 80px; /* Limit the height if the logo is too tall */
+  height: auto;
 }
 
 header h1 {
