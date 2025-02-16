@@ -14,73 +14,12 @@ body {
   padding: 20px;
 }
 
-/* Header Styling */
-header {
-  background: linear-gradient(to right, #D32F2F, #B71C1C); /* Subtle gradient for elegance */
-  color: white;
-  padding: 20px 40px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo {
-  max-width: 80px; /* Slightly smaller logo for better proportion */
-  height: auto;
-  margin-right: 20px; /* Add some space between the logo and title */
-}
-
-h1 {
-  font-size: 2.2em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
-  flex-grow: 1; /* Ensure the title takes space between the logo and the navigation */
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.nav-list li {
-  font-size: 1.1em;
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-list a:hover {
-  color: #f7f7f7;
-  border-bottom: 2px solid #f7f7f7; /* Elegant hover effect with underlining */
-}
-
 /* Image and Quote Section */
 .image-quote {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 60px; /* Increased margin-bottom */
 }
 
 .half-width {
@@ -95,15 +34,17 @@ nav {
   padding-left: 20px;
   color: #555;
   line-height: 1.5;
+  margin-top: 20px; /* Added top margin for more space */
 }
 
 /* Grid layout for sections */
 .sections-grid {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px; /* Increased gap between items */
   padding: 40px 0;
   flex-wrap: wrap;
+  margin-bottom: 60px; /* Increased bottom margin */
 }
 
 .section-item {
@@ -118,6 +59,7 @@ nav {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   font-size: 1.2em;
+  margin-bottom: 30px; /* Added margin-bottom to each section item */
 }
 
 .section-item strong {
@@ -141,6 +83,6 @@ footer {
   background-color: #eee;
   font-size: 1em;
   border-radius: 5px;
-  margin-top: 40px;
+  margin-top: 60px; /* Increased top margin for more space from sections */
   color: #555;
 }
