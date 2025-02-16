@@ -56,8 +56,9 @@ h1 {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  width: 200px;
+  width: 100%;
   z-index: 1000;
+  margin-top: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -140,9 +141,16 @@ footer {
   h1 {
     font-size: 1.6em;
   }
-  
+
   .logo {
     width: 30px;
   }
-}
 
+  .sections-grid {
+    flex-direction: column;
+  }
+
+  .dropdown-content {
+    width: 90%;
+  }
+}
