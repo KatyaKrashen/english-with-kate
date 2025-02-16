@@ -93,3 +93,48 @@ footer {
   border-radius: 50%; /* This will make the logo round */
   object-fit: cover; /* Ensures the image covers the circle without stretching */
 }
+
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Automatically adjusts number of columns */
+  gap: 30px; /* Adds space between lessons */
+  margin-top: 40px;
+}
+
+.lesson-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.lesson-item strong {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #B71C1C;
+  margin-bottom: 10px;
+}
+
+.lesson-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 40px;
+  color: #B71C1C;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #555;
+}
