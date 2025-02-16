@@ -10,7 +10,8 @@ body {
   font-family: 'Libre Baskerville', serif;
   background-color: #f7f7f7;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 14px;
   padding: 20px;
 }
 
@@ -29,45 +30,45 @@ header {
   border-radius: 50%;
 }
 .menu-icon {
-  font-size: 1.5em;
+  font-size: 1.2em;
   cursor: pointer;
 }
 
-/* Dropdown Menu */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.dropdown:hover .dropdown-content {
+/* Image Section */
+.image-container img {
+  width: 100%;
   display: block;
+  border-radius: 0;
+  margin-bottom: 10px;
 }
-.dropdown-content a {
-  color: #B71C1C;
-  padding: 10px;
-  display: block;
-  text-decoration: none;
+.image-container .citation {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
 }
 
 /* Section Styling */
 .section-item {
   background-color: #fff;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  font-size: 13px;
 }
 
 /* Join Section */
 .join-section button {
-  padding: 10px 25px;
+  padding: 8px 20px;
   background-color: #B71C1C;
   color: white;
   border-radius: 20px;
   font-family: 'Libre Baskerville', serif;
+  font-size: 13px;
   border: none;
   cursor: pointer;
   transition: 0.3s;
@@ -79,8 +80,8 @@ header {
 /* Footer */
 footer {
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
+  padding: 12px;
+  font-size: 12px;
   background-color: #fff;
   border-top: 1px solid #ddd;
   margin-top: 20px;
