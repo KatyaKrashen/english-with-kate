@@ -14,92 +14,61 @@ body {
   padding: 20px;
 }
 
+/* Header with flexbox */
 header {
   background-color: #B71C1C;
   color: white;
   padding: 15px 30px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
-  max-width: 100px; /* Make the logo smaller */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 100px;
   height: auto;
 }
 
-header h1 {
+h1 {
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-left: 20px;
 }
 
-.menu-icon {
-  font-size: 2.5em;
-  color: white;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none; /* Hidden on desktop */
+/* Navigation List */
+nav {
+  display: flex;
+  gap: 20px;
 }
 
-.dropdown {
-  position: relative;
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: #B71C1C;
-  border-radius: 5px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+.nav-list li {
+  font-size: 1.2em;
 }
 
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  color: white;
+.nav-list a {
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.dropdown-content a:hover {
-  background-color: #D32F2F;
-}
-
-/* For smaller screens, show menu icon */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Display the hamburger menu icon */
-  }
-
-  .dropdown.open .dropdown-content {
-    display: block; /* Show the dropdown when clicked */
-  }
-}
-
-/* Desktop Navigation */
-@media (min-width: 769px) {
-  .dropdown-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .dropdown-content a {
-    padding: 15px;
-    text-align: center;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #D32F2F;
-  }
+.nav-list a:hover {
+  color: #D32F2F; /* Change color on hover */
 }
 
 /* Image and Quote Section */
