@@ -1,8 +1,8 @@
-// Get the button and menu elements
-const menuButton = document.getElementById('menu-button');
-const menuContent = document.getElementById('menu-content');
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const dropdown = document.querySelector('.dropdown');
 
-// Toggle the visibility of the menu when the button is clicked
-menuButton.addEventListener('click', function () {
-  menuContent.classList.toggle('show');
-});
+  menuIcon.addEventListener('click', () => {
+    dropdown.classList.toggle('open');
+  });
+</script>
