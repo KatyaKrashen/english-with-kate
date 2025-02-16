@@ -149,3 +149,9 @@ footer {
     width: 90%;
   }
 }
+
+
+/* This will make the dropdown menu visible when the class "show" is applied */
+.show {
+  display: block;
+}
