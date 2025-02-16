@@ -129,6 +129,16 @@ h1 {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 768px) {
+  .sections-grid {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+  }
+
+  .section-item {
+    max-width: none; /* Remove the width constraint for smaller screens */
+  }
+}
+
 footer {
   padding: 15px;
   text-align: center;
