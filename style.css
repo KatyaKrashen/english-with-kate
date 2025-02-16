@@ -1,127 +1,15 @@
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-  font-family: 'Libre Baskerville', serif;
-  background-color: #f7f7f7;
-  color: #333;
-  line-height: 1.5;
-  font-size: 14px;
-  padding: 20px;
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #B71C1C;
-  color: white;
-  padding: 15px;
-}
-.header-left {
-  display: flex;
-  align-items: center;
-}
-.logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transition: transform 0.3s;
-}
-.logo:hover {
-  transform: scale(1.1);
-}
-.menu-icon {
-  font-size: 2.5em;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-.menu-icon:hover {
-  transform: scale(1.1);
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content a {
-  color: #B71C1C;
-  padding: 10px;
-  display: block;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Image Section */
-.image-container img {
-  width: 60%;
-  display: block;
-  margin: 0 auto 10px;
-}
-.citation {
-  font-family: 'Libre Baskerville', serif;
-  font-style: italic;
-  font-size: 13px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #555;
-}
-
-/* Section Buttons */
-.section-item {
-  display: inline-block;
-  background-color: #fff;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 13px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-.section-item:hover {
-  background-color: #f1e4e4;
-  transform: scale(1.05);
-}
-
-/* Join Section */
-.join-section button {
-  padding: 8px 20px;
-  background-color: #B71C1C;
-  color: white;
-  border-radius: 20px;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 13px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.join-section button:hover {
-  background-color: #9B1B1B;
-  transform: scale(1.1);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 12px;
-  font-size: 12px;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
-  margin-top: 20px;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Libre Baskerville', serif; background-color: #f7f7f7; color: #333; padding: 20px; }
+header { display: flex; align-items: center; justify-content: space-between; padding: 15px; background-color: #B71C1C; color: white; }
+.header-left { display: flex; align-items: center; gap: 15px; }
+.logo { width: 50px; height: 50px; border-radius: 50%; transition: 0.3s; }
+.logo:hover, button:hover, .section-item:hover { transform: scale(1.1); }
+.menu-icon { font-size: 2.5em; cursor: pointer; }
+.dropdown-content { display: none; position: absolute; background: white; padding: 5px; border-radius: 5px; z-index: 100; }
+.dropdown:hover .dropdown-content { display: block; }
+.dropdown-content a { padding: 10px; display: block; color: #B71C1C; text-decoration: none; }
+.image-container { display: flex; align-items: center; gap: 20px; padding: 20px; }
+.image-container img { width: 30%; border-radius: 8px; }
+.citation { font-style: italic; font-size: 1.5em; }
+.section-item { display: inline-block; background: white; padding: 15px; margin: 10px; border-radius: 10px; transition: 0.3s; cursor: pointer; }
+footer { padding: 15px; text-align: center; font-size: 1em; background-color: #eee; margin-top: 20px; }
