@@ -1,15 +1,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Libre Baskerville', serif; background-color: #f7f7f7; color: #333; padding: 20px; }
-header { display: flex; align-items: center; justify-content: space-between; padding: 15px; background-color: #B71C1C; color: white; }
-.header-left { display: flex; align-items: center; gap: 15px; }
-.logo { width: 50px; height: 50px; border-radius: 50%; transition: 0.3s; }
-.logo:hover, button:hover, .section-item:hover { transform: scale(1.1); }
+header { display: flex; justify-content: space-between; align-items: center; background-color: #B71C1C; padding: 15px; color: white; }
+.header-left { display: flex; align-items: center; gap: 10px; }
 .menu-icon { font-size: 2.5em; cursor: pointer; }
-.dropdown-content { display: none; position: absolute; background: white; padding: 5px; border-radius: 5px; z-index: 100; }
+.dropdown-content { display: none; position: absolute; background-color: white; width: 200px; border-radius: 5px; overflow: visible; }
 .dropdown:hover .dropdown-content { display: block; }
-.dropdown-content a { padding: 10px; display: block; color: #B71C1C; text-decoration: none; }
-.image-container { display: flex; align-items: center; gap: 20px; padding: 20px; }
-.image-container img { width: 30%; border-radius: 8px; }
-.citation { font-style: italic; font-size: 1.5em; }
-.section-item { display: inline-block; background: white; padding: 15px; margin: 10px; border-radius: 10px; transition: 0.3s; cursor: pointer; }
-footer { padding: 15px; text-align: center; font-size: 1em; background-color: #eee; margin-top: 20px; }
+.dropdown-content a { display: block; padding: 10px; color: #B71C1C; }
+.image-quote { display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+.image-quote img { width: 48%; border-radius: 8px; }
+.citation { font-style: italic; font-size: 2em; }
+.sections-grid { display: flex; justify-content: space-around; padding: 20px; gap: 10px; }
+.section-item { width: 22%; aspect-ratio: 1/1; background: white; padding: 15px; border-radius: 10px; transition: 0.3s; text-align: center; cursor: pointer; }
+.section-item:hover, .logo:hover, .menu-icon:hover { transform: scale(1.1); }
+footer { padding: 15px; text-align: center; background-color: #eee; font-size: 1em; margin-top: 20px; }
