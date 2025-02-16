@@ -50,13 +50,13 @@ h1 {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 100%; /* This ensures it drops directly below the menu icon */
   left: 0;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  width: 100%;
+  width: 200px;
   z-index: 1000;
   margin-top: 10px;
 }
