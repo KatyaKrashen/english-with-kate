@@ -102,15 +102,17 @@ h1 {
 }
 
 .sections-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* This makes the items line up horizontally */
+  justify-content: space-between; /* Distribute space evenly between items */
   gap: 20px;
   padding: 20px 0;
+  flex-wrap: wrap; /* Allow items to wrap if the screen is too narrow */
 }
 
 .section-item {
-  flex: 1;
-  min-width: 220px;
+  flex: 1; /* Ensure each item takes equal space */
+  min-width: 200px; /* Minimum width for each section */
+  max-width: 220px; /* Maximum width for each section */
   background: white;
   border-radius: 10px;
   padding: 20px;
