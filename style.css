@@ -1,3 +1,4 @@
+/* Global settings */
 * {
   margin: 0;
   padding: 0;
@@ -5,167 +6,115 @@
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif; /* Elegant font */
   background-color: #f7f7f7;
+  color: #333; /* Slightly darker text for readability */
+  line-height: 1.6;
   padding: 20px;
+  font-size: 1.1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Libre Baskerville', serif;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #B71C1C;
-  padding: 15px 25px;
   color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative; /* Added for positioning the dropdown relative to the header */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo {
-  width: 40px;
-  height: auto;
-}
-
-h1 {
-  font-size: 2em;
+header h1 {
+  font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.menu-icon {
+header .menu-icon {
   font-size: 2.5em;
-  cursor: pointer;
-  background: none;
-  border: none;
   color: white;
+  cursor: pointer;
 }
 
-.dropdown-content {
-  display: none; /* Initially hidden */
-  position: absolute;
-  top: 100%; /* Position the dropdown directly below the hamburger button */
-  left: 0;
-  background-color: white;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  width: 100%; /* Full width of its parent container */
-  z-index: 1000;
-  margin-top: 10px;
-  max-height: 300px; /* Limit the height of the dropdown */
-  overflow-y: auto; /* Add a scrollbar if the dropdown content is too long */
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  color: #B71C1C;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.dropdown-content a:hover {
-  background-color: #f7f7f7;
-}
-
-/* This is the new CSS for the .show class */
-.show {
-  display: block; /* Makes the dropdown visible */
-}
-
+/* Adjustments for image and quote */
 .image-quote {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
 .half-width {
   width: 50%;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .citation {
   font-style: italic;
-  font-size: 1.8em;
+  font-size: 1.5em;
   padding-left: 20px;
-  color: #555;
+  color: #555; /* Lighter gray for the quote */
+  line-height: 1.5;
 }
 
+/* Grid layout for sections */
 .sections-grid {
-  display: flex; /* This makes the items line up horizontally */
-  justify-content: space-between; /* Distribute space evenly between items */
+  display: flex;
+  justify-content: space-between;
   gap: 20px;
-  padding: 20px 0;
-  flex-wrap: wrap; /* Allow items to wrap if the screen is too narrow */
+  padding: 40px 0;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
+/* Individual section items */
 .section-item {
-  flex: 1; /* Ensure each item takes equal space */
-  min-width: 200px; /* Minimum width for each section */
-  max-width: 220px; /* Maximum width for each section */
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
   background: white;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 25px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
-  color: #333;
   font-size: 1.2em;
+  color: #333;
+}
+
+.section-item strong {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #B71C1C; /* Bold red color for section titles */
+  display: block;
+  margin-bottom: 15px;
 }
 
 .section-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #f0f0f0; /* Light background color on hover */
 }
 
-@media (max-width: 768px) {
-  .sections-grid {
-    flex-direction: column; /* Stack the sections vertically on smaller screens */
-  }
-
-  .section-item {
-    max-width: none; /* Remove the width constraint for smaller screens */
-  }
-}
-
+/* Footer Styling */
 footer {
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   background-color: #eee;
   font-size: 1em;
   border-radius: 5px;
   margin-top: 40px;
+  color: #555;
 }
 
-@media (max-width: 768px) {
-  .citation {
-    font-size: 1.5em;
-  }
-
-  h1 {
-    font-size: 1.6em;
-  }
-
-  .logo {
-    width: 30px;
-  }
-
-  .sections-grid {
-    flex-direction: column;
-  }
-
-  .dropdown-content {
-    width: 90%;
-  }
+/* Hover effect for links in dropdown */
+.dropdown-content a:hover {
+  background-color: #B71C1C;
+  color: white;
+  transform: scale(1.05); /* Add a little scale effect to menu items */
 }
